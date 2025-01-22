@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://361ojq30gn4h"]
+
+[ext_resource type="Texture2D" uid="uid://djg5o6rsiplvj" path="res://scenes/maze/background.png" id="1_ceymo"]
+[ext_resource type="Script" path="res://scenes/maze/maze.gd" id="1_kq6b8"]
+
+[node name="Maze" type="Node2D"]
+script = ExtResource("1_kq6b8")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture = ExtResource("1_ceymo")
+centered = false

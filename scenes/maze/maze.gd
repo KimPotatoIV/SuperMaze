@@ -219,7 +219,7 @@ func draw_solution_maze(path: Array) -> void:
 ##################################################
 func reset_maze() -> void:
 	for node in get_children():
-		if node is Sprite2D:
+		if node is Sprite2D and node.name != "Background":
 			remove_child(node)
 			node.queue_free()
 	# 모든 자식 노드를 순회하여 삭제

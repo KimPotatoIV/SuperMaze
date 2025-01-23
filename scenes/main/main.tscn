@@ -1,10 +1,15 @@
-[gd_scene load_steps=3 format=3 uid="uid://2rhsohj6sibq"]
+[gd_scene load_steps=4 format=3 uid="uid://2rhsohj6sibq"]
 
 [ext_resource type="PackedScene" uid="uid://361ojq30gn4h" path="res://scenes/maze/maze.tscn" id="1_uhn52"]
 [ext_resource type="PackedScene" uid="uid://dplmag27fhtx" path="res://scenes/hud/hud.tscn" id="2_5s8st"]
+[ext_resource type="AudioStream" uid="uid://bur1b82rdcjxa" path="res://sounds/Super maze.wav" id="3_4bq4c"]
 
 [node name="Main" type="Node2D"]
 
 [node name="Maze" parent="." instance=ExtResource("1_uhn52")]
 
 [node name="HUD" parent="." instance=ExtResource("2_5s8st")]
+
+[node name="BGM" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_4bq4c")
+autoplay = true
